@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "vazir";
+    src: url("vazir/Vazir-Thin-FD-WOL.eot");
+    src: url("vazir/Vazir-Thin-FD-WOL.eot?#iefix") format("embedded-opentype"), url("vazir/Vazir-Thin-FD-WOL.woff2") format("woff2"), url("vazir/Vazir-Thin-FD-WOL.woff") format("woff"), url("vazir/Vazir-Thin-FD-WOL.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+body{
+    background-color: #20262e;
+}
+*{
+    font-family: "vazir";
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+button{
+    box-shadow:2px 1px 20px 5px cornflowerblue;
+    border-radius: 0 10px 0 10px;
+    padding: 20px 30px;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    transition: all .3s;
+}
+button::after{
+    content: "";
+    width: 35px;
+    height: 35px;
+    background-color:coral;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0 0 50% 0;
+    z-index: 100;
+    opacity: .5;
+}
+button::before{
+    content: "";
+    width: 35px;
+    height: 35px;
+    background-color:mediumpurple;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 50% 0 0 0;
+    z-index: 100;
+    opacity: .5;
+}
+button:hover{
+    opacity: 1;
+    border-radius: 50px 10px 50px 10px;
+    cursor: pointer;
+}

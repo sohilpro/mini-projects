@@ -1,0 +1,62 @@
+body {
+            background-color: #131315;
+            font-family: 'Montserrat', monospace;
+            font-weight: bold;
+        }
+        
+        .container {
+            width: 70%;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 400px;
+            transform: translate(-50%, -50%);
+        }
+        
+        .results-container {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        
+        textarea:focus,
+        input:focus {
+            outline: none;
+        }
+        
+        .container input {
+            width: 98%;
+            background-color: #131315;
+            border: 1px solid #9985FB;
+            height: 25px;
+            border-radius: 25px;
+            margin-bottom: 25px;
+            padding-left: 2%;
+            color: white;
+        }
+        
+        .post {
+            display: flex;
+            flex-direction: row;
+            background-color: #282828;
+            padding: 2%;
+            color: white;
+            cursor: pointer;
+            transition: all 0.2s;
+            margin-bottom: 25px;
+        }
+        
+        .post:hover {
+            box-shadow: 0px 1px 0.5px #9985FB;
+        }
+        
+        .post img {
+            width: 100px;
+            height: 100px;
+        }
+        
+        .post h1 {
+            font-size: 20px;
+            margin: auto;
+            margin-left: 25px;
+        }

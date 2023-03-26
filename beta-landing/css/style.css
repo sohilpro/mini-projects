@@ -1,0 +1,220 @@
+@font-face {
+  font-family: "Vazir";
+  src: url("../fonts/Vazir.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Vazir.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Vazir.woff2") format("woff2"),
+    url("../fonts/Vazir.woff") format("woff"),
+    url("../fonts/Vazir.ttf") format("truetype");
+  /* Safari, Android, iOS */
+}
+body {
+  font-family: "Vazir" !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: 2;
+}
+/* Utils */
+.btn-scale {
+  transition: all 0.5s;
+}
+.btn-scale:hover {
+  transform: scale(1.1);
+}
+
+/* Header */
+.navbar {
+  padding: 20px;
+}
+.scrollHeader {
+  background-color: #fff;
+  transition: all 0.5s;
+  box-shadow: 0px 2px 20px rgb(1 41 112 /10%);
+}
+@media (max-width: 992px) {
+  .navbar {
+    background-color: #fff;
+  }
+}
+/* introduction */
+.intro {
+  height: 100vh;
+  width: 100%;
+  background: url("../img/intro/intro-bg.png") top center no-repeat;
+  background-size: cover;
+}
+
+/* About US */
+
+.content {
+  background-color: #f6f9ff;
+  padding: 40px;
+}
+
+/* Values */
+
+.Values i {
+  font-size: 42px;
+}
+.Values i.blue {
+  color: #4154f1;
+}
+.Values i.orange {
+  color: #ee6c20;
+}
+.Values i.green {
+  color: #15be56;
+}
+.Values i.red {
+  color: #bb0852;
+}
+
+/* Featurs */
+.features i {
+  font-size: 44px;
+  color: #4154f1;
+}
+
+/* Services */
+.services .service-box {
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  padding: 60px 30px;
+  text-align: center;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.services .service-box .icon {
+  font-size: 36px;
+  padding: 20px;
+  line-height: 0;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.services .service-box .read-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
+
+.services .service-box .read-more i {
+  font-size: 18px;
+  line-height: 0;
+  margin-right: 0.4rem;
+  padding: 0;
+}
+
+/*? service-box blue */
+.services .service-box.blue {
+  border-bottom: 3px solid #2db6fa;
+}
+
+.services .service-box.blue .icon {
+  color: #2db6fa;
+  background: #dbf3fe;
+}
+
+.services .service-box.blue .read-more {
+  color: #2db6fa;
+}
+
+.services .service-box.blue:hover {
+  background: #2db6fa;
+  color: #fff;
+}
+
+/*todo service-box orange */
+.services .service-box.orange {
+  border-bottom: 3px solid #f68c09;
+}
+
+.services .service-box.orange .icon {
+  color: #f68c09;
+  background: #fde3c4;
+}
+
+.services .service-box.orange .read-more {
+  color: #f68c09;
+}
+
+.services .service-box.orange:hover {
+  background: #f68c09;
+  color: #fff;
+}
+
+/** service-box green */
+.services .service-box.green {
+  border-bottom: 3px solid #08da4e;
+}
+
+.services .service-box.green .icon {
+  color: #08da4e;
+  background: #cffddf;
+}
+
+.services .service-box.green .read-more {
+  color: #08da4e;
+}
+
+.services .service-box.green:hover {
+  background: #08da4e;
+  color: #fff;
+}
+
+.services .service-box:hover .read-more {
+  color: #fff;
+}
+.services .service-box:hover .icon {
+  background-color: #fff;
+}
+
+/* Contact us */
+.contact-us i {
+  color: #4154f1;
+  font-size: 35px;
+}
+
+/* Footer */
+.social-media a i {
+  font-size: 20px;
+  color: rgba(1, 41, 112, 0.5);
+}
+
+.footer hr {
+  width: 70%;
+  height: 5px;
+}
+
+.footer a {
+  color: #000;
+}
+
+/*! Footer Copy Right */
+.copy-right {
+  background-color: #f6f9ff;
+}

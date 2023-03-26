@@ -1,0 +1,85 @@
+* {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', monospace;
+        }
+        
+        body {
+            background-color: #161616;
+            color: white;
+        }
+        
+        .container {
+            width: 35%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .card-project {
+            width: 100%;
+            background-color: #26252B;
+            margin-bottom: 10%;
+            cursor: pointer;
+            transition: all 0.5s;
+            transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+            transform-style: preserve-3d;
+        }
+        
+        .img_container {
+            margin: auto;
+            width: 100%;
+        }
+        
+        .content-card {
+            width: 85%;
+            margin: auto;
+            padding: 3%;
+        }
+        
+        img {
+            width: 100%;
+            height: fit-content;
+            background-color: #282828;
+            object-fit: contain;
+        }
+        
+        .card-project h2,
+        .card-project p {
+            transition: all 0.5s;
+            margin-bottom: 4%;
+        }
+        
+        .card-project p {
+            font-size: 1.2vw;
+            opacity: 0.7;
+        }
+        
+        .card-project:hover {
+            transform: translate3d(0px, 0px, 0px) scale3d(1.02, 1.02, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+            transform-style: preserve-3d;
+        }
+        
+        .card-project h2 {
+            font-size: 2vw;
+        }
+        
+        .card-project:hover h2 {
+            color: #A82C2C;
+        }
+        
+        .card-project:hover p {
+            opacity: 1;
+        }
+        
+        .btn {
+            width: 0%;
+            height: 7vh;
+            background-color: #A82C2C;
+            transition: all 0.5s;
+        }
+        
+        .card-project:hover .btn {
+            width: 100%;
+        }

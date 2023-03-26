@@ -1,0 +1,94 @@
+body {
+            font-family: 'Montserrat', monospace;
+            font-weight: bold;
+            background-color: #161616;
+        }
+        
+        #videoContainer {
+            width: 500px;
+            height: 300px;
+            margin: 50px auto;
+            background-color: #333;
+            position: relative;
+        }
+        
+        #videoContainer:hover #controls,
+        #videoContainer:hover #progress_container {
+            opacity: 1;
+        }
+        
+        #myVideo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        #mute {
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 5px;
+        }
+        
+        #controls,
+        #progress_container {
+            opacity: 0;
+            transition: all 0.5s;
+            position: absolute;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        #controls {
+            top: 0;
+        }
+        
+        #progress_container {
+            bottom: 0;
+        }
+        
+        #playPause {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 5vw;
+            color: #B9A92C;
+            transition: all 0.5s;
+            cursor: pointer;
+        }
+        
+        .range_css {
+            -webkit-appearance: none;
+            width: 30%;
+            height: 1vh;
+            background: linear-gradient(to bottom, #B9A92C 10%, #AE9F4B);
+            cursor: ew-resize;
+            border-radius: 1.5rem
+        }
+        
+        .range_css::-ms-tooltip {
+            display: none
+        }
+        
+        #progress {
+            width: 100%;
+            margin: auto;
+            border-radius: 0;
+        }
+        
+        .range_css::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            border: 1px solid #DBD8BD;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            background: #DBD8BD;
+            box-shadow: 0 0 .125rem #aaa
+        }
+        
+        .hide {
+            opacity: 0;
+        }

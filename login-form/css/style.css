@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333;
+  z-index: -10;
+}
+
+.form_container {
+  width: 300px;
+  height: 300px;
+  background-color: #212121;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px #000;
+  position: relative;
+  overflow: hidden;
+  padding: 2px;
+}
+
+.form_container::after {
+  content: "";
+  width: 3px;
+  height: 500px;
+  background-color: #ffffff;
+  position: absolute;
+  animation: rotate 5s linear infinite;
+  left: 50%;
+  top: -90px;
+}
+
+.form_container::before {
+  content: "";
+  width: 3px;
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  animation: rotate 5s linear infinite;
+  left: 50%;
+  top: -90px;
+  animation-delay: 0.05s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(40deg);
+  }
+  50% {
+    transform: rotate(230deg);
+  }
+  100% {
+    transform: rotate(40deg);
+  }
+}
+
+.form_login {
+  inset: 2;
+  z-index: 100;
+  background-color: #212121;
+  height: calc(100% - 4px);
+  border-radius: 10px;
+  position: relative;
+  left: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: calc(100% - 3px);
+  padding: 20px;
+}
+
+.title_form {
+  text-align: center;
+  color: rgb(223, 224, 224);
+  letter-spacing: 0.05em;
+}
+
+.title_form span {
+  color: #00fbff;
+}
+
+.input_username {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 12px 0;
+}
+
+.label_username {
+  transition: 0.5s;
+  position: absolute;
+  color: #fff;
+  letter-spacing: 0.05em;
+  top: 20px;
+  font-size: 14px;
+  height: 17.57px;
+  left: 10px;
+  cursor: pointer;
+}
+
+#input-username {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  outline: none;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#input-username:focus ~ .span_username , 
+#input-username:valid ~ .span_username,
+#input-password:focus ~ .span_password , 
+#input-password:valid ~ .span_password {
+  height: 36px;
+}
+#input-username:focus ~ .label_username , 
+#input-username:valid ~ .label_username,
+#input-password:focus ~ .label_password , 
+#input-password:valid ~ .label_password {
+  top: -5px !important;
+  left: 0px !important;
+  font-size: 13px !important;
+}
+.span_username {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  height: 0;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.input_password {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0px 0 12px 0;
+}
+
+.label_password {
+  height: 17.57px;
+  position: absolute;
+  color: #fff;
+  transition: 0.5s;
+  letter-spacing: 0.05em;
+  font-size: 14px;
+  top: 20px;
+  left: 10px;
+  cursor: pointer;
+}
+
+#input-password {
+  background-color: transparent;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  outline: none;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.span_password {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  height: 0;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.more {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.froghet_password {
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  color: rgb(118, 118, 118);
+  transition: 0.5s;
+}
+
+.create_acount {
+  letter-spacing: 0.05em;
+  color: rgb(123, 123, 123);
+  font-size: 13px;
+  transition: 0.5s;
+}
+
+.froghet_password:hover,
+.create_acount:hover {
+  color: #00fbff;
+}
+
+.div_submit {
+  margin-top: 20px;
+  display: flex;
+  /* width: 260px; */
+  position: relative;
+  overflow: hidden !important;
+  box-shadow: 5px 5px 20px #111111;
+  transition: 0.5s !important;
+}
+
+.btn {
+  padding: 10px;
+  width: 258px;
+  display: block;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #212121;height: 37px;
+  border: 1px solid #ffffff;
+}
+
+.efect {
+  display: inline-block;
+  position: absolute;
+  cursor: pointer;
+  width: 0px;
+  height: 90px;
+  left: 50%;
+  margin: 0 auto;
+  box-shadow: 0 0px 20px #ffffff;
+}
+
+@keyframes zoom {
+  0% {
+    width: 0px;
+    opacity: 0.5;
+  }
+  100% {
+    width: 300px;
+    left: 0%;
+    top: -10%;
+    opacity: 1;
+  }
+}
+
+.plase_whate {
+  width: 300px;
+  padding: 20px;
+  top: -300px;
+  border: 1px solid rgb(78, 78, 78);
+  border-radius: 10px;
+  background-color: #191919;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1000;
+  transition: 1s;
+}
+
+.plase_whate p {
+  color: #fff;
+}
+
+.plase_whate span {
+  color: #fff;
+  cursor: pointer;
+}
+
+.plase_whate .b_time {
+  position: absolute;
+  bottom: 0px;
+  left: 5px;
+  width: 0;
+  transition: 5s;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 50px;
+}
+
+.blur {
+  filter: blur(10px);
+}
