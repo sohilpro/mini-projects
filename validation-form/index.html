@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="man.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <title>Validation - Form | @sohilpro</title>
+</head>
+<body>
+    <form action="#" class="form">
+        <div class="info">
+            <img src="man.png" width="100" alt="">
+            <h1>@sohilpro</h1>
+        </div>
+        <div class="input">
+            <input type="tel" pattern="^(\+98|0)?9\d{9}$" placeholder="+98" required>
+            <i class="far fa-check-circle" style="color: rgb(0, 255, 0);" id="true"></i>
+            <i class="far fa-times-circle" style="color: red;" id="false"></i>
+        </div>
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>
