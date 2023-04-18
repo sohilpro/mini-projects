@@ -1,0 +1,40 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ),
+    url('https://i.ibb.co/5KnGSMV/6.png');
+	background-position: center;
+	background-size: cover;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	perspective: 800px;
+}
+
+.card {
+	width: 480px;
+	height: 300px;
+	
+	border-radius: 6px;
+	
+	background-image: url('https://i.ibb.co/5KnGSMV/6.png');
+	background-position: center;
+	background-size: cover;
+	
+	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30),
+							0 15px 12px rgba(0, 0, 0, 0.22);
+	
+	transition-property: transform;
+	transition-timing-function: cubic-bezier(.550, .055, .675, .19);
+}
